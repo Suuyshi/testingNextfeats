@@ -1,3 +1,9 @@
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/indigo.css";
+@import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/purple.css";
+@import "@radix-ui/colors/violet.css";
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -38,6 +44,11 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+
+button,
+p {
+  all: unset;
 }
 
 @media (prefers-color-scheme: dark) {
