@@ -5,11 +5,13 @@ type PropsType = {
 };
 
 export const getServerSideProps = async () => {
-  // Fetch data from external API
-  const res = await fetch("http://localhost:3000/api/random-number");
-  const data = await res.json();
+  // // Fetch data from external API
+  // const res = await fetch("http://localhost:3000/api/random-number");
+  // const data = await res.json();
 
-  return { props: { value: data.value } };
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+  return { props: { value: randomNumber } };
 };
 
 const ServerProps = ({ value }: PropsType) => {

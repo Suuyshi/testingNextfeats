@@ -5,14 +5,14 @@ type PropsType = {
 };
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/random-number");
-  const data = await res.json();
+  // const res = await fetch("http://localhost:3000/api/random-number");
+  // const data = await res.json();
 
-  console.log("data", data);
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
 
   return {
     props: {
-      value: data.value,
+      value: randomNumber,
     },
     revalidate: 1000, // This page will be regenerated every 1000 seconds
   };
