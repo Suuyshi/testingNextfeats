@@ -6,6 +6,6 @@ import Menu from "../components/Menu";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const x = Math.random();
-  return <p>{x}</p>;
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  return <h1>{randomNumber}</h1>;
 }
