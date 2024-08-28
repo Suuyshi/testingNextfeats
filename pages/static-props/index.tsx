@@ -14,9 +14,10 @@ export async function getStaticProps() {
     props: {
       value: randomNumber,
     },
-    revalidate: 1000, // This page will be regenerated every 1000 seconds
+    revalidate: 10, // This page will be regenerated every 10 seconds
   };
 }
+``;
 
 const StaticProps = ({ value }: PropsType) => {
   return (
